@@ -1,3 +1,15 @@
-<p>
-  coachs works!
-</p>
+<div class="container col-xl">
+  <div class="card-deck">
+    <div class="card " *ngFor="let coach of userData" style="width: 18rem; display: inline-table;margin-left: 50px; margin-bottom: 60px;">
+      <img src="../assets/images/profi.jpg" alt="" class="card-img-top mil">
+      <div class="card-body">
+        <h6 class="card-title">Nom : {{coach.firstName}} {{coach.lastName}}<span class="badge"><img src="../assets/images/val.png" class="val"></span></h6>
+        <h6 class="card-title">Age : {{coach.age}}</h6>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Memebre depuis : </small>
+      </div>
+    </div>
+  </div>
+</div>

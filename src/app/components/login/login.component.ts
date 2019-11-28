@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   errorMessage: string;
   private loginForm: FormGroup;
 
-  constructor(private userService: UserService ,private formBluilder: FormBuilder ,private router: Router) {
+  constructor(private userService: UserService ,private formBluilder: FormBuilder ,private router: Router) { 
 
     this.loginForm = formBluilder.group({
       mail: ['',Validators.required],
@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.loginForm);
   }
 
   loginUser(){
@@ -33,7 +34,6 @@ export class LoginComponent implements OnInit {
     this.userService.login(this.mail.value,this.password.value)
     .pipe()
     .subscribe(data=>{
-      console.log("LOGIN VALID");
       localStorage.setItem('CurrentUser', JSON.stringify(data));
       console.log(data);
       this.router.navigate(['home']);

@@ -1,0 +1,22 @@
+ .badge {
+    position: absolute;
+    top: -18px;
+    right: -15px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    
+    color: white;
+  }
+  .val{
+      width: 30px;
+      height: 30px;
+  }
+  .card:hover{
+      transition: 1s;
+      box-shadow: 3px 10px 14px 0px rgba(0,0,0,0.50);
+      cursor: pointer;
+  }
+  .mil{
+      align-items: center;
+  }
