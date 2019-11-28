@@ -1,0 +1,28 @@
+<div class="container col-xl">
+<div class="card p-5 text-white mt-5 col-sm-4 mx-auto" >
+  <h1>Connexion</h1>
+  <span class="text-white">{{errorMessage}}</span>
+  <form  class="was-validated" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <div class="form-group">
+      <label for="uname">Email:</label>
+      <input type="email" class="form-control" id="uname" placeholder="Votre email"  formControlName="mail">
+      <div class="valid-feedback text-white">Email valide</div>
+      <div class="invalid-feedback text-white p-2 rounded-pill  w-50 text-center">je saisie mon email</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Votre mot de passe"  formControlName="password">
+      <div class="valid-feedback text-white">Valid.</div>
+      <div class="invalid-feedback text-white p-2 rounded-pill w-50 text-center ">je saisie mon mot de passe</div>
+    </div>
+    
+    <div class=" text-center"> 
+        <button id="singlebutton" name="singlebutton" class="btn btn-primary">connexion</button> 
+    </div>
+    <div class="form-group form-check text-center mt-4">
+        <a routerLink="/subscribe"  class="link">J'ai pas de compte</a>
+      </div>
+  </form>
+
+</div>
+</div>

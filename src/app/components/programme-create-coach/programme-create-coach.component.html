@@ -1,0 +1,27 @@
+
+ <div class="row" *ngIf="errorMessage">
+  <div class="alert alert-danger" role="alert">
+    {{errorMessage}}
+  </div>
+</div>
+<br />
+<div class="row" *ngIf="successMessage">
+  <div class="alert alert-success" role="alert">
+    {{successMessage}}
+  </div>
+</div>
+  <div class="card" style="width: 18rem; display: inline-table;margin-left: 10px;" *ngFor="let ac of activityData">
+    <div class="btn-group" role="group" aria-label="Basic example" style="width: 100%;">
+      <button type="button" class="btn btn-outline-success">Modifier</button>
+      <button type="button" class="btn btn-outline-danger" (click)="removeActivity(ac.idActivity)">Supprimer</button>
+    </div><br><br>
+    <img src="http://localhost:8082/v1/photos/activity/{{ac.idActivity}}" class="card-img-top" alt="..." style="height:200px;">
+    <div class="card-body">
+      <h5 class="card-title">Categorie : {{ac.category}}</h5>
+      <span class="badge badge-pill badge-info p-2">Description : {{ac.describtionActivity}}</span><br><br>
+      <a href="#" class="btn btn-outline-success" style="width: 100%;">Acheter {{ac.price}}€</a>
+    </div>
+  </div>
+
+ 
+

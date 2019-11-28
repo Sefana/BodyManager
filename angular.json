@@ -23,9 +23,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/app/styles/bootstrap-4.3.1-dist/css/bootstrap.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/app/styles/bootstrap-4.3.1-dist/js/bootstrap.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

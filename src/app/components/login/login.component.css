@@ -1,0 +1,24 @@
+.card{
+    background-color: #f94646;
+    border-radius: 10px;
+    box-shadow:1px 9px 35px -3px black;
+}
+#singlebutton{
+    border: 1px solid #ffce69;
+    background-color: #ffce69;
+    border: none;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+#singlebutton:hover{
+
+    background-color:white;
+    border: 1px solid #ffce69;
+    color: black;
+}
